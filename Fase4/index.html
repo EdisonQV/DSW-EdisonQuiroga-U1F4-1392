@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="enlaces-header">
+            <a href="../Fase1/index.html">Fase-1</a>
+            <a href="../Fase2/index.html">Fase-2</a>
+            <a href="../Fase3/index.html">Fase-3</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Encuesta Flexbox</h1>
+        <form name="formulario">
+            <div class="form-group">
+                <label>Pregunta 1: ¿Cuál de las siguientes opciones NO es una propiedad de Flexbox?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta1" id="opcion1-1" value="a">
+                    <label class="form-check-label" for="opcion1-1">justify-content</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta1" id="opcion1-2" value="b">
+                    <label class="form-check-label" for="opcion1-2">flex-wrap</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta1" id="opcion1-3" value="c">
+                    <label class="form-check-label" for="opcion1-3">flex-direction</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Pregunta 2: ¿Qué propiedad de Flexbox se utiliza para alinear elementos verticalmente?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta2" id="opcion2-1" value="a">
+                    <label class="form-check-label" for="opcion2-1">flex-direction</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta2" id="opcion2-2" value="b">
+                    <label class="form-check-label" for="opcion2-2">align-items</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta2" id="opcion2-3" value="c">
+                    <label class="form-check-label" for="opcion2-3">flex-wrap</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Pregunta 3: ¿Cuál de las siguientes opciones define la dirección en la que se ordenan los
+                    elementos flexibles?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta3" id="opcion3-1" value="a">
+                    <label class="form-check-label" for="opcion3-1">justify-content</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta3" id="opcion3-2" value="b">
+                    <label class="form-check-label" for="opcion3-2">flex-direction</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta3" id="opcion3-3" value="c">
+                    <label class="form-check-label" for="opcion3-3">flex-wrap</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Pregunta 4: ¿Qué propiedad de Flexbox se utiliza para ajustar el tamaño de los elementos
+                    flexibles?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta4" id="opcion4-1" value="a">
+                    <label class="form-check-label" for="opcion4-1">justify-content</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta4" id="opcion4-2" value="b">
+                    <label class="form-check-label" for="opcion4-2">flex-wrap</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta4" id="opcion4-3" value="c">
+                    <label class="form-check-label" for="opcion4-3">flex</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Pregunta 5: ¿Cuál de las siguientes opciones define cómo se distribuyen los elementos flexibles a
+                    lo largo del eje principal?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta5" id="opcion5-1" value="a">
+                    <label class="form-check-label" for="opcion5-1">align-items</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta5" id="opcion5-2" value="b">
+                    <label class="form-check-label" for="opcion5-2">justify-content</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta5" id="opcion5-3" value="c">
+                    <label class="form-check-label" for="opcion5-3">flex-wrap</label>
+                </div>
+            </div>
+            <input type="button" class="btn btn-primary" onclick="ValidarRespuestas()" value="Enviar respuestas" />
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script/cuestionario.js"></script>
+</body>
+
+</html>
