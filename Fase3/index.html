@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css-grid/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Grid CSS Design</title>
+  <script>
+    document.addEventListener("click", function (event) {
+      const dropdowns = document.querySelectorAll(".dropdown");
+      dropdowns.forEach(function (dropdown) {
+        if (!dropdown.contains(event.target)) {
+          const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+          dropdownMenu.style.display = "none";
+        }
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <nav class="menu">
+    <ul>
+      <li><a class="active" href="index.html">Inicio</a></li>
+      <li class="dropdown">
+        <a href="tema.html" class="dropdown-toggle">Tema seleccionado</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Opción 1</a></li>
+          <li><a href="#">Opción 2</a></li>
+          <li><a href="#">Opción 3</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html">Mockup</a></li>
+      <li><a href="index.html">Acerca de</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header class="header">
+      <img class="img-header" src="img/1wd-logo.svg" alt="">
+    </header>
+    <main class="content">
+      <article class="article">
+        <h1>Agencia de desarrollo de software, expertos en diseño web y desarrollo de aplicaciones</h1>
+        <p>
+          Desarrollamos las soluciones tecnológicas que tu empresa necesita. Te brindamos:
+        </p>
+        <p>
+          Diseño gráfico
+        </p>
+        <p>
+          Diseño web
+        </p>
+        <p>
+          Producción de video
+        </p>
+        <p>
+          SEO
+        </p>
+        <p>
+          Marketing
+        </p>
+      </article>
+      <article class="article">
+        <h1>Contactenos</h1>
+        <div class="form-control">
+          <form class="row g-3">
+            <div class="col-auto">
+              <label for="staticEmail2" class="visually-hidden">Email</label>
+              <input type="text" class="form-control" id="staticEmail2" placeholder="email@example.com">
+            </div>
+            <div class="col-auto">
+              <label for="staticObservacion" class="visually-hidden">Mensaje</label>
+              <input type="text" class="form-control" id="staticObservacion" placeholder="mensaje">
+            </div>
+            <div class="col-auto mt-auto">
+              <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </article>
+    </main>
+    <aside class="sidebar">
+      <div class="menu">
+        <a href="#">
+          <h1>Inicio</h1>
+        </a>
+      </div>
+      <div class="menu">
+        <a href="audio.html">
+          <h1>Audios</h1>
+        </a>
+      </div>
+      <div class="menu">
+        <a href="nosotros.html">
+          <h1>Nosotros</h1>
+        </a>
+      </div>
+    </aside>
+    <div class="related-post">
+      Diseño gráfico
+    </div>
+    <div class="related-post">
+      Diseño web
+    </div>
+    <div class="related-post">
+      Producción de video
+    </div>
+    <div class="related-post">
+      SEO
+    </div>
+    <div class="related-post">
+      Marketing
+    </div>
+    <footer class="footer">
+      <p>
+        © 2023 Desarrollos Web. Todos los derechos reservados.
+      </p>
+    </footer>
+  </div>
+  <script src="ruta_del_archivo.js"></script>
+</body>
+
+</html>

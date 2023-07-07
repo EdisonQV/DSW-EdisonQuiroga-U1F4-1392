@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css-grid/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Grid CSS Design</title>
+</head>
+
+<body>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <nav class="menu">
+    <ul>
+      <li><a class="active" href="index.html">Inicio</a></li>
+      <li><a href="index.html">Tema seleccionado</a></li>
+      <li><a href="index.html">Mockup</a></li>
+      <li><a href="index.html">Acerca de</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header class="header">
+      <img class="img-header" src="img/1wd-logo.svg" alt="">
+    </header>
+    <main class="content">
+      <article class="article">
+        <h1>FLEX BOX</h1>
+        <p>
+          Es una tecnología de diseño en CSS que permite crear diseños flexibles
+          y dinámicos en la página web. Con Flexbox, es posible controlar el
+          tamaño, la posición y el orden de los elementos en una página web de
+          manera más eficiente que con los métodos de diseño tradicionales.
+        </p>
+        <p>
+          Flexbox es una forma de diseño de cajas, donde cada elemento de la
+          página web se trata como una caja. Estas cajas se organizan en una
+          línea principal (main axis) y una línea transversal (cross axis)
+          dependiendo de la dirección en la que se configure el contenedor.
+        </p>
+        <div class="video-container">
+          <video class="responsive-video" width="540" height="360" controls>
+            <source src="audio/tema.mp4" type="video/mp4">
+            <source src="audio/tema.mp4" type="video/webm">
+            Tu navegador no admite el elemento de video.
+          </video>
+        </div>
+      </article>
+      <article class="article">
+        <p>
+          Las propiedades principales de Flexbox son flex-container y flex-item. Para aplicar Flexbox en un
+          contenedor, se debe definir su
+          propiedad como un contenedor flex utilizando display: flex. Esto
+          indica que todos los elementos dentro del contenedor serán elementos
+          flex. Luego, se pueden utilizar diferentes propiedades, como justify-content, align-items, flex-wrap
+          y flex-direction, para ajustar la
+          posición y el tamaño de los elementos dentro del contenedor.
+        </p>
+      </article>
+    </main>
+    <aside class="sidebar">
+      <div class="menu">
+        <a href="index.html">
+          <h1>Inicio</h1>
+        </a>
+      </div>
+      <div class="menu">
+        <a href="nosotros.html">
+          <h1>Nosotros</h1>
+        </a>
+      </div>
+    </aside>
+    <div class="related-post">
+      Eje principal
+  </div>
+  <div class="related-post">
+      Eje cruzado
+  </div>
+  <div class="related-post">
+      Contenedor flex
+  </div>
+  <div class="related-post">
+      Contenedores flex Multi-línea con flex-wrap
+  </div>
+  <div class="related-post">
+      Abreviatura flex-flow
+  </div>
+  <footer class="footer">
+    <p>
+        © 2023 Desarrollos Web. Todos los derechos reservados.
+    </p>
+</footer>
+  </div>
+</body>
+
+</html>
